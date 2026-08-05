@@ -2,7 +2,7 @@
 
 # Personal Website
 
-Source for Yann Joel Cerasi personal academic website, live at <yannjcerasi.github.io/>.
+Source for Yann Joel Cerasi personal academic website, live at <yannjcerasi.github.io>.
 
 Built with plain HTML and CSS, hosted on GitHub Pages.
 
