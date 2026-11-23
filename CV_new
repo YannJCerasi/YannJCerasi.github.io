@@ -1,0 +1,189 @@
+\documentclass[11pt,a4paper]{article}
+
+% ====== Packages ======
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2cm,top=1.8cm,bottom=1.8cm]{geometry}
+\usepackage{mathpazo}                  % Palatino — clean, academic
+\usepackage[scaled=0.88]{helvet}       % sans for headers/affiliations
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage[absolute]{textpos}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% ====== Colors ======
+\definecolor{linkcol}{HTML}{1f3a5f}     % subtle navy for links
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkcol,
+  linkcolor=linkcol,
+  pdftitle={Curriculum Vitae --- Yann Joel Cerasi},
+  pdfauthor={Yann Joel Cerasi}
+}
+
+% ====== Section formatting ======
+\titleformat{\section}
+  {\normalfont\sffamily\bfseries\footnotesize\MakeUppercase}
+  {}{0pt}{}[\vspace{-6pt}\rule{\linewidth}{0.4pt}\vspace{-2pt}]
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+
+% ====== Header layout ======
+\newcommand{\name}[1]{{\Large\bfseries\sffamily #1}}
+
+% Two-column entry: left date/label column, right content
+\newenvironment{cventries}
+  {\begin{tabular}{@{}p{3.2cm}@{\hspace{0.4cm}}p{\dimexpr\linewidth-3.6cm\relax}@{}}}
+  {\end{tabular}}
+
+\setlength{\parindent}{0pt}
+
+% ====== Footer with page numbers ======
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize page \thepage{} of \pageref{LastPage}}
+
+\begin{document}
+
+% ====== HEADER ======
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+{\name{Yann Joel Cerasi}} & \footnotesize yannjoel.cerasi@uzh.ch \\[2pt]
+{\small Ph.D. Candidate in Finance} & \footnotesize \href{https://Yannjcerasi.github.io/}{Website} \\
+{\small Swiss Finance Institute \& University of Zurich} & \footnotesize \href{https://www.linkedin.com/in/yann-joel-cerasi-348679190/}{LinkedIn} \\
+{\small Department of Finance} & \footnotesize Citizenship: Swedish, French \\
+{\small Plattenstrasse 14, 8032 Zurich, Switzerland} & \footnotesize \\
+\end{tabularx}
+
+% ====== RESEARCH INTERESTS ======
+\section{Research Interests}
+Financial Intermediation, Household Finance and Macroprudential policy
+
+\vspace{6pt}
+% ====== WORK IN PROGRESS ======
+\section{Work in Progress}
+
+\textbf{Down Payments, Deferred Homes: How LTV Restrictions Reshape Household Consumption} \\
+\textit{with Gazi Kabaş (Tilburg University), Steven Ongena (Swiss Finance Institute, University of Zurich), and Kasper Roszbach (Lund University)}
+
+\vspace{2pt}
+\begin{quote}
+\small We study how households adjust consumption following the introduction of a loan-to-value (LTV) restriction using population-wide electronic expenditure records and administrative data. We find that renters increase consumption as a result of the policy, at odds with the policy's objective to further financial stability through greater down payments and household savings. As mandatory down payments make home purchases more difficult, prospective buyers delay on both home-ownership and the savings required for a down payment. This effect is robust to within-renter comparisons and is strongest in regions where the LTV restriction binds more. In contrast, households that purchase under the constraint reduce expenses before buying and keep them persistently lower thereafter. Our findings show that borrower-based macroprudential policies can reshape intertemporal behavior in unintended ways, with important implications for home ownership, aggregate demand, and the transmission of housing regulation to the real economy.
+\end{quote}
+
+\vspace{6pt}
+\textbf{Work in progress} 
+\begin{quote}
+\small Coming soon.
+\end{quote}
+\vspace{20pt}
+
+% ====== EDUCATION ======
+\section{Education}
+\begin{cventries}
+2024--present & \textbf{Ph.D. Candidate in Finance}, University of Zurich \& Swiss Finance Institute \\
+              & {\footnotesize\quad -- Main advisor: Steven Ongena} \\[4pt]
+2020--2022    & \textbf{M.Sc. in Business Analytics}, BI Norwegian Business School \\
+              & {\footnotesize\quad -- GPA: A. Thesis: \emph{Revenue Forecasting for a New Pricing Model} (Grade: A)} \\[4pt]
+2021          & Exchange Semester, Université Paris Dauphine \\
+              & {\footnotesize\quad -- Courses from M.Sc. in Quantitative Economics and M.Sc. in Finance} \\[4pt]
+2017--2020    & \textbf{Bachelor of Business Administration}, BI Norwegian Business School \\
+              & {\footnotesize\quad -- GPA: A} \\[4pt]
+2019          & Exchange Semester, Queensland University of Technology \\
+              & {\footnotesize\quad -- Courses in Corporate Finance, Econometrics, International Economics} \\
+\end{cventries}
+
+% ====== RESEARCH ASSISTANCE ======
+\section{Research Assistance}
+
+\textbf{What Do 12 Billion Card Transactions Say About House Prices and Consumption?} \\
+\textit{Knut Are Aastveit, Kasper Roszbach, Ragnar Juelsrud, Jesper Bojerud, Magnus Guldbrandsen (2023)}
+
+\textbf{Reproducibility in Management Science} \\
+\textit{Fišar, M., Greiner, B., Huber, C., Katok, E., Ozkes, A., and the Management Science Reproducibility Collaboration (2023)}
+\begin{quote} \\
+& {\footnotesize\quad -- Member of the Management Science Reproducibility Collaboration.} \\
+\end{quote}
+
+% ====== WORK EXPERIENCE ======
+\section{Work Experience}
+\begin{cventries}
+08/2022--08/2024 & Pre-Doctoral Researcher, Norges Bank --- Research Department \\
+                 & {\footnotesize\quad -- Worked with administrative microdata on consumption, tax returns, and the housing market} \\[4pt]
+08/2021--11/2021 & Intern, SAS Institute \\
+                 & {\footnotesize\quad -- Developed an operational risk application for a commercial Norwegian bank} \\
+\end{cventries}
+
+% ====== REFERENCES ======
+\section{References}
+
+\noindent
+\begin{minipage}[t]{0.48\linewidth}
+\textbf{Steven Ongena}\\
+Department of Finance\\
+University of Zurich \& SFI\\
+Plattenstrasse 14\\
+8032 Zurich, Switzerland\\
+\href{mailto:steven.ongena@bf.uzh.ch}{steven.ongena@bf.uzh.ch}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\textbf{Kasper Roszbach}\\
+Norges Bank \& Lund University\\
+Bankplassen 2\\
+0151 Oslo\\
+Norway\\
+\href{mailto:kasper.roszbach@norges-bank.no}{kasper.roszbach@norges-bank.no}
+\end{minipage}
+
+% ====== PRESENTATIONS ======
+\section{Presentations (** = scheduled)}
+\begin{cventries}
+2026 & 28th Annual Meeting of the Swiss Society for Financial Market Research (SGF Conference) (Zurich, Switzerland); Central Bank of Ireland Policy Seminar (Dublin, Ireland); HEC Liège Young Researchers Conference in Economics (HYRCE) (Liège, Belgium); 15th European Meeting of the Urban Economics Association (Barcelona, Spain); 4th Milan PhD Economics Workshop, Bocconi University (Milan, Italy); 15th International Conference of the Financial Engineering and Banking Society (FEBS), EUI (Florence, Italy); SSES Annual Congress of the Swiss Society of Economics and Statistics (St.~Gallen, Switzerland); 19th International Accounting \& Finance Doctoral Symposium (IAFDS), Università degli Studi di Cagliari (Sardinia, Italy); IBEFA Summer Meeting at the 101st WEAI Conference (Denver, USA); 15th MoFiR Workshop on Banking, Poster Session (Varese, Italy); 17th Annual Financial Markets and Liquidity (AFML) Conference \\
+\end{cventries}
+
+% ====== DISCUSSIONS ======
+\section{Discussions (** = scheduled)}
+\begin{cventries}
+2026 & 15th European Meeting of the Urban Economics Association (Barcelona, Spain); IBEFA Summer Meeting at the 101st WEAI Conference (Denver, USA)** \\
+\end{cventries}
+
+% ====== GRANTS & AWARDS ======
+\section{Grants \& Awards}
+\begin{cventries}
+2024-- & Norges Bank PhD Scholarship \\
+2024-- & SNSF Swiss National Science Foundation \\
+\end{cventries}
+
+% ====== TEACHING ======
+\section{Teaching Assistance}
+\begin{cventries}
+2025 \& 2026, Fall   & TA, Corporate Finance, University of Zurich \\
+2026, Spring & TA, Sustainable Finance, University of Zurich \\
+\end{cventries}
+
+% ====== SERVICE ======
+\section{Service \& Reviewing}
+\begin{cventries}
+2025--present & PhD Representative, Faculty Council, Dep. of Finance, University of Zurich \\
+Reviewer & Journal of Economics and Business \\
+\end{cventries}
+
+% ====== MISCELLANEOUS ======
+\section{Miscellaneous}
+\begin{cventries}
+IT Skills & Python, Stata, R, SQL, \LaTeX, VBA, MATLAB, Microsoft Office \\
+Languages & French (native), English (fluent), Norwegian (fluent) \\
+Hobbies   & Football, Cycling, Running, Chess \\
+\end{cventries}
+
+\vspace{12pt}
+
+\end{document}
